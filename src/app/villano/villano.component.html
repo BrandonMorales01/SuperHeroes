@@ -1,0 +1,47 @@
+<html>
+
+
+<h1 style="color:rgb(255, 0, 0);">Villanos Mas Malos</h1>
+<ul class="villanos">
+<li *ngFor="let villano of villanos" [class.selected]="villano === selectedVillano" (click)="onSelect(villano)">
+  <span class="badge">{{villano.id}}</span>{{villano.name}}
+</li>
+</ul>
+<div *ngIf="selectedVillano">
+  <h1 style="color:rgb(255, 255, 255);">
+   Editando a: {{selectedVillano.name | uppercase}}
+  </h1>
+  <ul class="villanos">
+    <li>
+      <label class="badge" for="villano-name">Nombre de Villano</label>
+      <span ></span>{{selectedVillano.name}}
+    </li>
+  </ul>
+
+
+
+    <ul class="villanos">
+      <li>
+
+        <label class="badge" for="villano-name">Nivel Poder:</label>
+        <span >{{selectedVillano.nivel+numero}}</span>
+      </li>
+    </ul>
+
+
+  <ul class="villanos">
+    <li>
+      <label class="badge" for="villano-name">Poder</label>
+      <span ></span>{{selectedVillano.namepower}}
+    </li>
+  </ul>
+
+
+<label for="hero-universo"> <h1 style="color:rgb(255, 255, 255);">Edicion Poder </h1></label> <br>
+
+  <button (click) = 'acumulador(base)'>+AUMENTAR PODER {{base}}</button>
+  <input id="hero-universo"  placeholder={{selectedVillano.nivel+numero}}>
+  <button (click)='acumulador(-base)'>-{{base}}   REDUCIR PODER </button>
+</div>
+
+</html>

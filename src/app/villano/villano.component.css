@@ -1,0 +1,132 @@
+.villanos {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+  background-color: #ffffff;
+}
+.villanos li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.villanos li:hover {
+  color: #fa1010;
+  background-color: #e6e6e6;
+  left: .1em;
+}
+.villanos li.selected {
+  background-color: black;
+  color: white;
+}
+.villanos li.selected:hover {
+  background-color: #ff0000;
+  color: white;
+}
+.villanos li.selected:active {
+  background-color: black;
+  color: white;
+}
+.villanos .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #ff0000;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+button{
+  background-color: black;
+  color: white;
+}
+input {
+  padding: .5rem;
+}
+.villanos {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.villanos li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.villanos li:hover {
+  color: #fc1919;
+  background-color: #c7c6c1;
+  left: .1em;
+}
+.villanos li.selected {
+  background-color: rgb(252, 5, 5);
+  color: white;
+}
+.villanos li.selected:hover {
+  background-color: #ecc5d7;
+  color: white;
+}
+.villanos li.selected:active {
+  background-color: black;
+  color: white;
+}
+.villanos .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #000000;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+button{
+  background-color: black;
+  color: white;
+}
+input {
+  padding: .5rem;
+}
+
+
+h1 {
+  display: block;
+  font-size: 3em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+
+  text-shadow: 3px  0px 0px rgb(255, 0, 0),
+               0px  3px 0px rgb(240, 240, 245),
+              -3px  0px 0px black,
+               0px -3px 0px black;
+}
+
+
+:host {
+  background-color: rgb(255, 255, 255);
+  size: 200px 200px;
+  display: block;
+}

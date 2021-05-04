@@ -5,15 +5,19 @@ import { NgModule } from '@angular/core';
 
 
 @NgModule({
-  declarations: [
-    HeroeComponent,
-    ListadoComponent
+  declarations:[
+  HeroeComponent,
+  ListadoComponent,
+
+
+
   ],
   exports: [
     ListadoComponent
   ],
   imports: [
-    CommonModule
+CommonModule
+
   ]
 })
 export class HeroesModule{
